@@ -6,8 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "open:doc": "open-cli docs/index.html",
-    "doc:build": "typedoc",
-    "doc": "npm run doc:build && npm run open:doc"
+    "doc-noDefaultExport:build": "typedoc  --name no-default-export --entryPoints src/index.noDefaultExport.ts",
+    "doc-noDefaultExport": "npm run doc-noDefaultExport:build && npm run open:doc",
+    "doc-existDefaultExport:build": "typedoc --name exist-default-export --entryPoints src/index.existDefaultExport.ts",
+    "doc-existDefaultExport": "npm run doc-existDefaultExport:build && npm run open:doc"
   },
   "author": "",
   "license": "ISC",

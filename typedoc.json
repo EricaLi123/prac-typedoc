@@ -1,22 +1,6 @@
 {
   "readme": "README.md",
   "out": "docs",
-  //   "entryPoints": ["src/"], //等价于["src/index.ts"], 找不到就会报错
-  //   "entryPoints": ["src/*.ts"], //有多个入口，不同于"entryPoints": ["src/"](只有一个入口),
-
-  //   "name": "index.exportDirectly",
-  //   "entryPoints": ["src/index.exportDirectly.ts"], //module 只有根index， index 页面中有 fn,fn2,A
-  //   "name": "index.exportByWrap",
-  //   "entryPoints": ["src/index.exportByWrap.ts"], //当src 存在 index.ts（export {fn1Page,fn2Page}），导出结果：index root :{ fn1Page, fn2Page}
-  "name": "index.exportByWrapInDefault",
-  "entryPoints": ["src/index.exportByWrapInDefault.ts"], //当src 存在 index.ts（export {fn1Page,fn2Page}），导出结果：index root :{ fn1Page, fn2Page}
-
-  //   "basePath": "src/index1.ts",
-  //   "entryPoints": ["src/index.ts"],
-  //src/*.ts 导出结果是所有文件
   "includes": ["src"],
   "includeVersion": true
-  //   "disableSources": true
-  //   "exclude": "src/index.ts"
-  // "external-modulemap": "src/([\\w\\-_]+)/",
 }
